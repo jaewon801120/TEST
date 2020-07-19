@@ -5,9 +5,19 @@ import java.util.List;
 
 public class MyUtil {
 
+	public static <T> void PrintArray(ArrayList<T> array) {
+
+		System.out.print("array : ");
+		for (int i=0; i<array.size(); i++) {
+			System.out.print(array.get(i) + ", ");
+		}
+		System.out.println();
+
+	}
+	
 	public static void PrintArray(int[] array) {
 
-		System.out.print("MyUtil : ");
+		System.out.print("array : ");
 		for (int i=0; i<array.length; i++) {
 			System.out.print(array[i] + ", ");
 		}
