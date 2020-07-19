@@ -50,10 +50,6 @@ class Solution8 {
 			}
 		}
 
-		
-		
-		
-		
 		ArrayList<User> ans3 = new ArrayList<User>();
 		
 		if (nA != 0) {
