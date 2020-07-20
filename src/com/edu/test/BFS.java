@@ -18,8 +18,11 @@ public class BFS {
 		g.addEdge(2, 3);
 		g.addEdge(3, 2);
 		g.addEdge(3, 4);
+		g.addEdge(4, 0);
+		g.addEdge(4, 2);
+		g.addEdge(4, 3);
 
-		g.BFS(0);
+		g.BFS(4);
 
 	}
 

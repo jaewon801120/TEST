@@ -7,17 +7,23 @@ public class DFS {
 
 	public static void main(String[] args) {
 
-		Graph1 g = new Graph1(4);
+		Graph1 g = new Graph1(5);
 
 		g.addEdge(0, 1);
 		g.addEdge(0, 2);
+		g.addEdge(0, 4);
 		g.addEdge(1, 2);
-		g.addEdge(2, 0);
+//		g.addEdge(2, 0);
+//		g.addEdge(2, 1);
 		g.addEdge(2, 3);
-		g.addEdge(3, 3);
+//		g.addEdge(3, 2);
+		g.addEdge(3, 4);
+//		g.addEdge(4, 0);
+		g.addEdge(4, 2);
+//		g.addEdge(4, 3);
 
-		g.DFS(2); /* 주어진 노드를 시작 노드로 DFS 탐색 */
-		g.DFS(); /* 비연결형 그래프의 경우 */
+		g.DFS(4); /* 주어진 노드를 시작 노드로 DFS 탐색 */
+		//g.DFS(); /* 비연결형 그래프의 경우 */
 
 	}
 
