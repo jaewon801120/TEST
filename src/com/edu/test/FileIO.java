@@ -8,7 +8,7 @@ public class FileIO {
 		
 		try
 		{
-			readAll("");
+			readAll("D:\\download\\u_multi.txt");
 		}
 		catch (FileNotFoundException e)
 		{
@@ -21,7 +21,7 @@ public class FileIO {
 
 	}
 
-	// ÅØ½ºÆ® ÆÄÀÏ ÇÑ ¹ø¿¡ ¸ğµÎ ÀĞ±â (Utility Å¸ÀÔ)
+	// í…ìŠ¤íŠ¸ íŒŒì¼ í•œ ë²ˆì— ëª¨ë‘ ì½ê¸° (Utility íƒ€ì…)
 	public static String readAll(String filePath) throws IOException {
 		 
 	    StringBuilder  stringBuilder;
@@ -43,7 +43,7 @@ public class FileIO {
 	    return stringBuilder.toString();
 	}
 	
-	// ÅØ½ºÆ® ÆÄÀÏ ¶óÀÎ ´ÜÀ§·Î ÀĞ¾î¼­ Ã³¸®
+	// í…ìŠ¤íŠ¸ íŒŒì¼ ë¼ì¸ ë‹¨ìœ„ë¡œ ì½ì–´ì„œ ì²˜ë¦¬
 	public static void readLine(String filePath) throws IOException {
 		 
 		FileReader     fileReader     = null;
@@ -53,7 +53,7 @@ public class FileIO {
 		    bufferedReader = new BufferedReader(fileReader);
 		    String line;
 		    while ((line = bufferedReader.readLine()) != null) {
-		        //[[line °ª Ã³¸®]]
+		        //[[line ê°’ ì²˜ë¦¬]]
 		    }
 		     
 		} finally {
@@ -62,7 +62,7 @@ public class FileIO {
 		}
 	}
 	
-	// ÅØ½ºÆ® ÆÄÀÏ ¾²±â (Utility Å¸ÀÔ)
+	// í…ìŠ¤íŠ¸ íŒŒì¼ ì“°ê¸° (Utility íƒ€ì…)
 	public static void write(String filePath, String content) throws IOException {
 		 
 	    FileWriter     fileWriter     = null;
@@ -78,7 +78,7 @@ public class FileIO {
 	    }
 	}
 	
-	// Æú´õ ³» ÆÄÀÏ ¸®½ºÆ® Ã³¸®
+	// í´ë” ë‚´ íŒŒì¼ ë¦¬ìŠ¤íŠ¸ ì²˜ë¦¬
 	public static void folderRead() {
 
 		File folder = new File(".");
@@ -89,7 +89,7 @@ public class FileIO {
 		
 	}
 	
-	// ÆÄÀÏÀÇ Æ¯Á¤ ¹ÙÀÌÆ®ºÎÅÍ Æ¯Á¤ ±æÀÌ¸¸Å­ ÀĞ±â
+	// íŒŒì¼ì˜ íŠ¹ì • ë°”ì´íŠ¸ë¶€í„° íŠ¹ì • ê¸¸ì´ë§Œí¼ ì½ê¸°
 	public static byte[] readBytes(String filePath, int offset, int length) throws IOException {
 		 
 	    RandomAccessFile randomFile = null;
