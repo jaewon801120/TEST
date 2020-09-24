@@ -8,8 +8,8 @@ public class ExamArray {
 
 	public static void main(String[] args) {
 
-		//int[] input = { 1, 3, 2, 3, 5, 1 };
-		int[] input = { 1, 3, 2, 4, 2 };
+		int[] input = { 1, 3, 2, 3, 5, 1 };
+		//int[] input = { 1, 3, 2, 4, 2 };
 		Solution8 sol = new Solution8();
 		sol.solution(input);
 
@@ -64,8 +64,12 @@ class Solution8 {
 			User u3 = new User(3, nC);
 			ans3.add(u3);
 		}
-
-		Collections.sort(ans3, new OKCompare());
+		
+		MyUtil.PrintArray(ans3);
+		
+		//Collections.sort(ans3, new OKCompare());
+		// compareTo 호출
+		Collections.sort(ans3);
 		
 		MyUtil.PrintArray(ans3);
 		
@@ -82,6 +86,9 @@ class Solution8 {
 				ret.add(u);
 		}
 		
+		MyUtil.PrintArray(ret);
+		
+		// comparator 호출
 		Collections.sort(ret, new UserCompare());
 		
 		MyUtil.PrintArray(ret);
